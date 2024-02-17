@@ -9,7 +9,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 
 h1,
@@ -30,11 +30,24 @@ a {
   color: inherit;
 }
 
+img,
+source {
+  display: block;
+  inline-size: 100%;
+}
+
 button,
 input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  display: block;
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 ul,

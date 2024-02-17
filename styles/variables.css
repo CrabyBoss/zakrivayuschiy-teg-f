@@ -1,1 +1,14 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --text-main-font: 'Inter', sans-serif;
+    --text-accent-font: 'Press Start 2P', fantasy;
+    --text-accent-font-weight: 400;
+    --text-accent-font-main-size: 14px;
+    --text-accent-font-main-line-height: 12.6px;
+    --text-main-font-size: 18px;
+    --text-main-line-height: 21px;
+    --text-title-line-height: 21.78px;
+    --content-section-width: clamp(375px, 0rem + 100vw, 700px);
+    --content-section-width-forSmallScreens: clamp(320px, 0rem + 100vw, 375px);
+}
