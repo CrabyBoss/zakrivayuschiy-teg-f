@@ -10,27 +10,6 @@
         repeating-linear-gradient(to right,#000, #000 2px, transparent 2px, transparent 4px),
         repeating-linear-gradient(to bottom,#000, #000 2px, transparent 2px, transparent 4px),
         linear-gradient(to bottom, #007f0c, #004306);
-    ;
-    
-    --text-main-weight: 465;
-    --text-title-weight: 785;
-
-    --text-main-color: #00CC14;
-    --bg-section-color: #000;
-    --border-color: #00CC14;
-    --lable-border-color: #000;
-    --button-color: #00CC14;
-
-    --heart-contour-color: #00CC14;
-    --heart-fill-color: #f00;
-}
-
-.page.theme-dark {
-    --bg-image: 
-        repeating-linear-gradient(to right,#000, #000 2px, transparent 2px, transparent 4px),
-        repeating-linear-gradient(to bottom,#000, #000 2px, transparent 2px, transparent 4px),
-        linear-gradient(to bottom, #007f0c, #004306);
-    ;
     
     --text-main-weight: 465;
     --text-title-weight: 785;
@@ -51,7 +30,6 @@
         repeating-linear-gradient(to right,#000, #000 2px, transparent 2px, transparent 4px),
         repeating-linear-gradient(to bottom,#000, #000 2px, transparent 2px, transparent 4px),
         linear-gradient(to bottom, #007f0c, #004306);
-        ;
         
         --text-main-weight: 465;
         --text-title-weight: 785;
@@ -72,7 +50,6 @@
         repeating-linear-gradient(to right,#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
         repeating-linear-gradient(to bottom,#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
         linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-    ;
     
     --text-main-weight: 400;
     --text-title-weight: 700;
@@ -87,22 +64,23 @@
     --heart-fill-color: #f00;
 }
 
-.page.theme-light {
-    --bg-image: 
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-image: 
         repeating-linear-gradient(to right,#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
         repeating-linear-gradient(to bottom,#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
         linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-    ;
+    
+        --text-main-weight: 400;
+        --text-title-weight: 700;
 
-    --text-main-weight: 400;
-    --text-title-weight: 700;
+        --text-main-color: #000000;
+        --bg-section-color: #fff;
+        --border-color: #000;
+        --lable-border-color: #fff;
+        --button-color: #fff;
 
-    --text-main-color: #000000;
-    --bg-section-color: #fff;
-    --border-color: #000;
-    --lable-border-color: #fff;
-    --button-color: #fff;
-
-    --heart-contour-color: #000;
-    --heart-fill-color: #f00;
+        --heart-contour-color: #000;
+        --heart-fill-color: #f00;
+    }
 }

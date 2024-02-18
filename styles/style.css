@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--text-main-font);
+  font-family: var(--text-main-font), sans-serif;
   color: var(--text-main-color);
   font-size: var(--text-main-font-size);
   line-height: var(--text-main-line-height);
@@ -27,6 +27,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 
   display: flex;
   flex-direction: column;
@@ -67,7 +68,7 @@
 }
 
 .logo {
-  font-family: var(--text-accent-font);
+  font-family: var(--text-accent-font), fantasy;
   font-weight: var(--text-accent-font-weight);
   font-size: clamp(49px, 1.909rem + 4.923vw, 65px);
   text-transform: uppercase;
@@ -75,7 +76,7 @@
 }
 
 .heading {
-  font-family: var(--text-accent-font);
+  font-family: var(--text-accent-font), fantasy;
   font-weight: var(--text-accent-font-weight);
   font-size: clamp(14px, 0.226rem + 2.769vw, 23px);
   text-transform: uppercase;
@@ -96,7 +97,7 @@
 
 .theme-menu__item {
   position: relative;
-  font-family: var(--text-accent-font);
+  font-family: var(--text-accent-font), fantasy;
   font-weight: var(--text-accent-font-weight);
   font-size: var(--text-accent-font-main-size);
 }
@@ -184,9 +185,9 @@
   inline-size: min-content;
   block-size: min-content;
   position: absolute;
-  inset-inline-end: 25px;
+  inset-inline-end: clamp(13px, -0.053rem + 3.692vw, 25px);
   inset-block-start: 25px;
-  font-family: var(--text-accent-font);
+  font-family: var(--text-accent-font), fantasy;
   font-weight: var(--text-accent-font-weight);
   font-size: var(--text-accent-font-main-size);
   line-height: 100%;
@@ -199,12 +200,13 @@
     -1px 0 var(--lable-border-color), 
     1px 0 var(--lable-border-color),
     0 1px var(--lable-border-color),
-  0 -1px var(--lable-border-color);
+    0 -1px var(--lable-border-color);
 }
 
-@supports ((-webkit-text-stroke: 1px var(--lable-border-color))) {
+@supports ((text-stroke: 1px var(--lable-border-color)) or (-webkit-text-stroke: 1px var(--lable-border-color))) {
   .watermark {
     -webkit-text-stroke: 1px var(--lable-border-color);
+    text-stroke: 1px var(--lable-border-color);
     text-shadow: none;
   }
 }
@@ -259,7 +261,7 @@
 .content-button {
   outline: 2px solid var(--border-color);
   font-size: var(--text-accent-font-main-size);
-  font-family: var(--text-accent-font);
+  font-family: var(--text-accent-font), fantasy;
   line-height: var(--text-accent-font-main-line-height);
   font-weight: var(--text-accent-font-weight);
   transition: box-shadow 0.3s;
@@ -371,7 +373,7 @@ dialog::backdrop {
 }
 
 .dialog-paragraph {
-  font-family: var(--text-accent-font);
+  font-family: var(--text-accent-font), fantasy;
   font-size: var(--text-accent-font-main-size);
   font-weight: var(--text-accent-font-weight);
   line-height: var(--text-main-line-height);
