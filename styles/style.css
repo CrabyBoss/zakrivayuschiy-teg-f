@@ -500,7 +500,7 @@ dialog::backdrop {
   transform-origin: center;
 }
 
-/* filters */
+/* filters  */
 
 .filter-constrast20 {
   filter: contrast(20%);
