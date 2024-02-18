@@ -101,7 +101,7 @@
   font-size: var(--text-accent-font-main-size);
 }
 
-.theme-menu__button {                             /* Кнопки в header*/
+.theme-menu__button {                             /*  Кнопки в header*/
   text-transform: uppercase;
   padding: 0px;
   transition: color 0.3s;
