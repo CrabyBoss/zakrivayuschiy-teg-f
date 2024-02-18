@@ -19,12 +19,10 @@
   min-block-size: 100dvb;
   font-family: var(--text-main-font);
   color: var(--text-main-color);
-  font-weight: var(--text-main-weight);
   font-size: var(--text-main-font-size);
   line-height: var(--text-main-line-height);
-
-  font-variation-settings: 'wgth' var(--text-main-weight);
-
+  font-variation-settings: 'wght' var(--text-main-weight);
+  
   background-image: var(--bg-image);
   background-position: center;
   background-repeat: no-repeat;
