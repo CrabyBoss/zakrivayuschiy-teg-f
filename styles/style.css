@@ -23,6 +23,8 @@
   font-size: var(--text-main-font-size);
   line-height: var(--text-main-line-height);
 
+  font-variation-settings: 'wgth' var(--text-main-weight);
+
   background-image: var(--bg-image);
   background-position: center;
   background-repeat: no-repeat;
@@ -37,6 +39,7 @@
 @supports (font-variation-settings: normal) {
   .page {
       font-family: var(--text-main-font), sans-serif;
+      font-variation-settings: 'wgth' var(--text-main-weight);
   }
 } 
 
@@ -230,7 +233,6 @@
   align-items: center;
   align-self: end;
   margin: 0 25px 25px 25px;
-  display: flex;
   gap: 6px;
 }
 
@@ -412,7 +414,7 @@ dialog::backdrop {
 
   .header__theme-menu {
     margin-inline-start: auto;
-    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 
   .dialog {
